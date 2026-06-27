@@ -27,8 +27,18 @@ void explainset(){
     cout<<*(it)<<endl;//{4}
 
     cout<<s.count(7);//returns true or false based on whether the element is present in the set or not
+    cout<<endl;
+
     
-    s.erase(7);//{4,45}
+    //ERASE
+    set <int> s1{2,9,3,6,1,7,4,11,14};
+    s1.erase(6);//{2,9,3,1,7,4,11,14}
+    auto it2=s1.find(4);
+    auto it3=s1.find(3);
+    s1.erase(it3,it2);
+    for(int x:s1){
+        cout<<x<<" ";
+    }
 
 
 
