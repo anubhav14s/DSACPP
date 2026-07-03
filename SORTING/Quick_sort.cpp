@@ -30,7 +30,7 @@ void QuickSort(vector<int> &v,int low ,int high){
 }
 
 int main(){
-    vector <int> v{1,3,2,4,7,9,5,8,6};
+    vector <int> v{1,3,2,4,7,9,5,8,6,11};
     QuickSort(v,0,v.size()-1);
     
     for(int x:v){
