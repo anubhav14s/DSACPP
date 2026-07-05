@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//BRUTFORCE APPROCH
 void rotateright(int arr[],int n,int d){
     d=d%n;
     if (d==0) return ;
@@ -14,6 +15,7 @@ void rotateright(int arr[],int n,int d){
         arr[i]=temp[i];
     }
 }
+//BRUTEFORCE APPROCH
 void rotateleft(int arr[],int n,int d){
     d=d%n;
     if (d==0) return ;
