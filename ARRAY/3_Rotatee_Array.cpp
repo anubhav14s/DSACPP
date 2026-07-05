@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//OPTIMAL APPROCH
 void rotateright(int arr[],int n,int d){
     d=d%n;
     reverse(arr+(n-d),arr+n);
@@ -8,6 +9,7 @@ void rotateright(int arr[],int n,int d){
 
     
 }
+//OPTIMAL APPROCH
 void rotateleft(int arr[],int n,int d){
     d=d%n;
     reverse(arr,arr+d);
