@@ -32,7 +32,7 @@ void rotateleft(int arr[],int n,int d){
 
 }
 int main(){
-    int arr[6]={2,9,5,3,1,7};
+    int arr[6]={2,9,5,3,1,6};
     rotateleft(arr,6,29);
     rotateright(arr,6,3);
     for(int x:arr){
