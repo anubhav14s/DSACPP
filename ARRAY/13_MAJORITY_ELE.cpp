@@ -12,6 +12,7 @@ int majority(vector <int>&nums){
     }
     return -1;
 }
+//Moore's Voting Algorithm 
 int voting(vector<int>&nums){
     int count=0;
     int ele;
@@ -24,7 +25,7 @@ int voting(vector<int>&nums){
     }
 }
 int main(){
-    vector<int> nums={3,2,3};
+    vector<int> nums={1,2,5,1,4,1,1,6,1,1};
     cout<<majority(nums)<<endl;
     return 0;
 }
