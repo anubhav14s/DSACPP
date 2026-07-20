@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//DUTCH NATIONAL FLAG ALGO 
 vector<int> zeros(vector<int>&nums){
     int low=0,mid=0,high=nums.size()-1;
     while(mid<=high){
@@ -22,4 +23,5 @@ int main(){
     for(int x:asdf){
         cout<<x<<" ";
     }
+    return 0;
 }
