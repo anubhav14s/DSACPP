@@ -6,7 +6,7 @@ int majority(vector <int>&nums){
         mpp[nums[i]]++;
     }
     for(auto it:mpp){
-        if(it.second>=nums.size()/2){
+        if(it.second>nums.size()/2){
             return it.first;
         }
     }
