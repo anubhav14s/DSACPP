@@ -11,8 +11,23 @@ int subarraysum(vector<int>&nums){
     }
     return maxi;
 }
+//Kadane's Algorithm
+int kadane(vector<int>&nums){
+    long long int sum=0,maxi=INT_MIN;
+    int start,end;
+    for(int i=0;i<nums.size();i++){
+        sum+=nums[i];
+        if (maxi<sum){
+            maxi=sum;
+        }
+        if(sum<0){
+            sum=0;
+        }
+    }
+    return maxi;
+}
 int main(){
     vector<int> nums={-2,1,-3,4,-1,2,1,-5,4};
-    cout<<subarraysum(nums)<<endl;
+    cout<<kadane(nums)<<endl;
     return 0;
 }
