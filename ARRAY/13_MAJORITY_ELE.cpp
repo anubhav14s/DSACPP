@@ -12,6 +12,17 @@ int majority(vector <int>&nums){
     }
     return -1;
 }
+int voting(vector<int>&nums){
+    int count=0;
+    int ele;
+    for(int i=0;i<nums.size();i++){
+        if (count>0){
+            if(ele==nums[i])count++;
+            else count--;
+        }
+        else ele=nums[i],count++;
+    }
+}
 int main(){
     vector<int> nums={3,2,3};
     cout<<majority(nums)<<endl;
