@@ -15,6 +15,6 @@ vector<int> answer(vector<int>&nums){
 int main(){
     vector<int> nums={10,22,19,21,3,0,6};
     vector<int>ans=answer(nums);
-    for(int x:ans) cout<<x <<" ";
+    for(int x:ans) cout<<x<<" ";
     return 0;
 }
