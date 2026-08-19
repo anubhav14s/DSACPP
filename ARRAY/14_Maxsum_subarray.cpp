@@ -14,7 +14,7 @@ int subarraysum(vector<int>&nums){
 //Kadane's Algorithm
 int kadane(vector<int>&nums){
     long long int sum=0,maxi=INT_MIN;
-    int start,end;
+    
     for(int i=0;i<nums.size();i++){
         sum+=nums[i];
         if (maxi<sum){
